@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Azure | Team 02</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Nunito", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .w3-half img:hover {
+    opacity: 1
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Team 02</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+       <a href="lab2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lab 2</a>
+      <a href="#whatisazure" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Azure là gì?</a>
+      <a href="#computation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Computation</a>
+      <a href="#azurevm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ Azure Virtual Machine</a>
+      <a href="#webapps" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ Web Apps</a>
+      <a href="#cloudservices" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ Cloud Services</a>
+      <a href="#datamn" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ Data Management</a>
+      <a href="#sqldb" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ + SQL Database</a>
+      <a href="#tables" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ + Tables</a>
+      <a href="#blobs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">+ + Blobs</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Nhóm 02</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-jumbo"><b>Tìm hiểu về Azure</b></h1>
+      <h1 class="w3-xxxlarge w3-text-teal" id="whatisazure"><b>Azure là gì?</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
+      <p>
+        Azure là nền tảng điện toán đám mây mở và linh hoạt cho phép bạn nhanh chóng xây dựng, triển khai và quản lí các ứng dụng
+        thông qua mạng lưới toàn cầu của trung tâm dữ liệu Microsoft. Azure luôn đảm bảo tính sẵn sàng và có thiết kế cân
+        bằng và có khả năng tự phục hồi khi phần cứng bị sự cố . Bạn có thể sử dụng bất cứ ngôn ngữ , công cụ hay nền tảng
+        nào để xây dựng các ứng dụng . Và bạn có thể tích hợp các ứng dụng trên đám mây công cộng của bạn với môi trường
+        IT sẵn có.
+      </p>
+    </div>
+
+  
+    <div class="w3-container" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-teal" id="computation"><b>Computation</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
+      <h2 id="azurevm">Azure Virtual Machine</h2>
+      <p>Khi chúng ta có nhu cầu tạo máy ảo, chúng ta có thể chọn từ các template có sẵn trên Azure hoặc chúng ta cũng có thể
+        tự cung cấp. Cách tiếp cận này thường được biết đến theo dạng Infrastructure as a Services (IaaS), đó là những gì
+        mà Azure Virtual Machine có thể cung cấp. Như hình trên bạn có thể hình dung làm thế nào để một máy ảo (Virtual Machine
+        – VM) có thể hoạt động và làm thế nào để tạo một VM từ 1 file VHD có sẵn. Để tạo một VM, chúng ta sẽ chỉ định loại
+        VHD sẽ sử dụng và kích thước cần dùng của VM. Chúng ta có thể trả chi phí cho Microsoft theo thời gian mà VM của
+        chúng ta chạy (trạng thái VM là running), đơn vị tính thời gian là phút và thời gian bắt đầu được tính khi chúng
+        ta start VM và trạng thái VM chuyển sang running ngoài ra sẽ có một phần chi phí (không đáng kể) cho việc lưu trữ
+        và duy trì các file VHD trên hệ thống của Azure. Azure có sẵn một thư viện các file VHDs thường được gọi là “Images”
+        nó chứa các file boot của các hệ điều hành. Trên thư viện này không những có các file boot của các hệ điều hành của
+        Microsoft, ngoài ra còn lưu trữ các ứng dụng, hệ điều hành của các hãng khác như Linux, Oracle, SQL Server… Các ngữ
+        cảnh thường dùng khi sử dụng VM trên Azure.</p>
+      <p>Dev/Test: Chúng ta có thể tạo các VM dùng để testing các ứng dụng mà chúng ta đang phát triển và chúng ta có thể shutdown
+        khi chúng ta hoàn tất việc testing. Trên các môi trường này, chúng ta cũng có thể sử dụng các loại Database Instance
+        được cung cấp từ Azure như MS SQL Server hoặc chúng ta tự cung cấp các loại Database Instance mà chúng ta tự setup
+        thông qua các VM. Move Application to Azure: Ở trường hợp này, khi chúng ta đang có các ứng dụng đang chạy ở On-Premises,
+        nay chúng ta có nhu cầu chuyển lên Azure để khai thác các tiện ích được cung cấp bởi Azure như bảo mật, tính sẵn
+        sàng cao…hay chúng ta muốn nâng cấp tài nguyên phần cứng để tăng khả năng đáp ứng truy cập của ứng dụng… thì giải
+        pháp chọn Azure là 1 hướng tối ưu mà chúng ta nên nghĩ đến. Extend Your DataCenter: Azure cho phép chúng ta dùng
+        các VMs để mở rộng Datacenter của chúng ta ở On-Premises hoặc chúng ta có thể dùng Azure VMs làm hệ thống dự phòng
+        như dùng để sao lưu dữ liệu, ứng dụng…Để tối ưu dịch vụ này, chúng ta nên dùng thêm các dịch vụ đang được cung cấp
+        bởi Azure như Azure Virtual Network, Azure Active Directory…</p>
+      <h2 id="webapps">Web Apps</h2>
+      <p>Một vấn đề thông thường mà người dùng khi sử dụng các dịch vụ điện toán đám mây là chạy các Website hoặc các ứng dụng
+        web (Web Application). Azure VMs cho phép chúng ta sử dụng các máy ảo và chạy các ứng dụng web trên đó, tuy nhiên
+        khi sử dụng Azure VMs thì chúng ta phải quản trị về mặt máy ảo, phải quản trị hệ điều hành, quản trị các thiết lập,
+        cài đặt trên các ứng dụng… Dịch vụ Web Apps là dịch vụ do Microsoft Azure cung cấp và được quản trị bằng công cụ
+        Azure Management Portal. Chúng ta có thể moving các website, các web application có sẵn của chúng ta lên Web Apps
+        hoặc chúng ta có thể tạo website mới, web application mới hoàn toàn từ cloud. Một khi mà website của chúng ta đang
+        hoạt động, chúng ta có thể thêm hoặc loại bỏ các Instance (Instance trên Microsoft Azure được hiểu là các tài nguyên
+        như CPU, RAM, Hard Disk…) nhằm cân bằng tải các yêu cầu truy cập. Azure Apps cung cấp cho chúng ta 2 lựa chọn là
+        chúng ta có thể chạy web application của chúng ta chung với các web application khác trên cùng một VM (chia sẻ tài
+        nguyên trên cùng 1 hệ thống) hoặc chúng ta có thể chạy web application trên một VM riêng biệt. Trong trường hợp chạy
+        trên một VM riêng biệt chúng ta có thể thêm bớt các tài nguyên như CPU, RAM… cho phù hợp với nhu cầu thực tế. Đối
+        với các ngôn ngữ phát triển, Web Apps hỗ trợ .NET, PHP, Node.js, Java and Python với cơ sở dữ liệu là MS SQL và mySQL.
+        Ngoài ra còn tích hợp các ứng dụng khác theo dạng Add-in như WordPress, Joomla va Drupal. Mục tiêu của Web Apps là
+        giảm chi phí đầu tư, tăng cường khả năng tương thích các ứng dụng, nền tảng khi vận hành cách hệ thống web application
+        trên nền cloud. Với Web Apps, chúng ta có thể áp dụng cho các công ty, tổ chức phát triển ứng dụng Web, thiết kế
+        Web… Vấn đề quản trị rất dễ dàng thông qua Management Portal, độ tương thích cao, bảo mật cao và đặc biệt tính sẵn
+        sàng và khả năng đáp ứng truy cập.
+      </p>
+      <h2 id="cloudservices">Cloud Services</h2>
+      <p>
+        Giả sử bạn đang có nhu cầu xây dựng một hệ thống ứng dụng hoạt động vận hành trên nền tảng Cloud (Cloud Application) và nó
+        hỗ trợ một lượng lớn truy cập đồng thời, không tiêu tốn nhiều thời gian để quản trị, phiên bản sử dụng và công nghệ
+        lúc nào cũng phải là mới nhất…Đối với những như cầu này, thì Azure hiện có những mô hình sau mà chúng ta có thể sử
+        dụng: Azure Web Apps cho phép chúng ta tạo ra các loại ứng dụng web, nhưng mà nó có một số hạn chế nhất định ví dụ
+        như chúng ta không có quyền quản trị cao nhất, chúng ta không thể cài đặt thêm các phần mềm tùy ý. Azure VMs thì
+        linh động hơn, cho phép chúng ta toàn quyền quản trị, và chúng ta có thể tùy ý thiết lập cấu hình, cài đặt phần mềm
+        tùy ý… nhưng ngược lại chúng ta lại có các khía cạnh khác cần lưu ý đến như độ tin cậy, liệu khả năng chúng ta có
+        thể vận hành, quản trị tốt hệ thống hay không?
+      </p>
+      <p>
+        Azure Cloud Services là công nghệ được thiết kế để hỗ trợ khả năng mở rộng, độ tin cậy và ít tiêu tốn thời gian quản trị
+        và nó thường được biết đến với tên gọi Platform as a Services (PaaS). Để sử dụng dịch vụ này, chúng ta sẽ tạo các
+        ứng dụng sử dụng các công nghệ có sẵn như C#, Java, PHP, Python, Node.js… sau đó nó sẽ được thực thi trên các VM
+        hoặc các Instance và hệ điều hành sử dụng là Window Server. Nhưng các VM này khác biệt với các VM trong Azure Virtual
+        Machines. Điều khác biệt đầu tiên là Azure sẽ tự quản lý các VM này, những việc làm như update các bản hotfix, Service
+        Pack, Antivirus…đều do Azure xử lý. Ngoài ra Azure sẽ giám sát các VM này, đảm bảo các VM lúc nào cũng ở trạng thái
+        tốt nhất có thể. Chúng ta có thể thiết lập hệ thống tự động thêm vào các Instance mới để hệ thống có thể đáp ứng
+        nhiều truy cập cùng thời điểm đồng thời sẽ giảm bớt các Instance đi nếu hệ thống chúng ta giảm lượt truy cập.
+      </p>
+      <p>
+        Từ những vấn đề trên cho ta thấy Cloud Services là một giải pháp tốt cho trường hợp chúng ta muốn can thiệp sâu vào nền tảng
+        ứng dụng chúng ta đang phát triển và không có nhu cầu can thiệp vào mức hệ điều hành chúng ta đang sử dụng.
+      </p>
+      <h2 id="datamn">Data Management (Quản lý dữ liệu)</h2>
+      <p>Các ứng dụng cần phải có dữ liệu, và các ứng dụng khác nhau sẽ đòi hỏi các loại dữ liệu khác nhau. Vì lý do đó, Windows
+        Azure cung cấp nhiều cách khác nhau để lưu trữ và quản lý dữ liệu. Một trong những điều này đã được mô tả ở bài trước:
+        đó là khả năng chạy SQL Server hoặc DBMS khác trong một VM được tạo bởi Windows Azure Virtual Machine. Tuy nhiên
+        một điều quan trọng cần được nhận thức là Windows Azure không chỉ giới hạn cho các hệ thống quan hệ; nó còn có khả
+        năng để chạy các công nghệ NoSQL như MongoDB hay Cassandra. Windows Azure cung cấp 3 giải pháp quản lý dữ liệu như
+        hình dưới đây.
+      </p>
+      <img src="http://cdn.quancafe.vn/z_650x0/_proview/2014/9/7/-WF-giai-phap-luu-tru-data-base-tren-cloud-windows-azure.png"
+        alt="">
+      <p>
+        Mỗi một giải pháp dữ liệu này hướng tới một nhu cầu khác nhau: lưu trữ dạng quan hệ, truy cập nhanh tới khối lượng lớn dữ
+        liệu với kiểu dữ liệu đơn giản, và lưu trữ nhị phân không cấu trúc. Trong tất cả các giải pháp này, dữ liệu được
+        tự động sao chép (replicate) chéo giữa 3 máy tính khác nhau trông một data center của Windows Azure nhằm cung cấp
+        khả năng sẵn sàng cao nhất. Một điểm đáng giá nữa là cả 3 lựa chọn dữ liệu này đều có thể truy cập trực tiếp bởi
+        một ứng dụng Windows Azure hoặc một ứng dụng thực thi ở bất kỳ nơi nào, trong trung tâm dữ liệu của doanh nghiệp,
+        trong máy tính cá nhân hay trên điện thoại thông minh.
+      </p>
+      <h3 id="sqldb">SQL Database</h3>
+      <p>
+        Cho việc lưu trữ dưới dạng quan hệ, Windows Azure cung cấp SQL Database. Thường được gọi với tên SQL Azure, SQL Database
+        cung cấp tất cả các tính năng chủ chốt của một hệ quản trị cơ sở dữ liệu quan hệ, bao gồm các giao dịch, truy cập
+        dữ liệu đồng thời bởi nhiều người sử dụng với sự toàn vẹn dữ liệu, truy vấn dạng ANSI SQL, và các mô hình lập trình
+        quen thuộc. Giống SQL Server, SQL Database có thể được truy cập sử dụng Entity Framework, ADO.NET, JDBC,và các công
+        nghệ truy cập dữ liệu quen thuộc khác. Nó cũng hỗ trợ hầu hết ngôn ngữ T-SQL, đi kèm với SQL Server Tools như SQL
+        Server Management Studio. Với tất cả ai đã quen với SQL Server ( hoặc cơ sở dữ liệu quan hệ khác), sử dụng SQL Database
+        là không thể bàn cãi.
+      </p>
+      <p>
+        Nhưng SQL Database không chỉ là một DBMS trên cloud, nó là một dịch vụ PaaS. Bạn vẫn kiểm soát dữ liệu của mình và ai có
+        thể truy cập chúng, nhưng SQL Database sẽ quản trị các công việc khác để cho nó thực thi như hạ tầng phần cứng hay
+        cập hệ điều hành và phần mềm mới nhất. SQL Database cũng cung cấp một lựa chọn để phân tán dữ liệu giữa nhiều máy
+        chủ. Điều này rất hữu dụng cho các ứng dụng với số lượng lớn dữ liệu hoặc cần thiết phải phân tách các yêu cầu truy
+        cập dữ liệu tới các máy chủ khác nhau để đảm bảo hiệu năng được tốt nhất.
+      </p>
+      <p>
+        Nếu bạn đang tạo một ứng dụng Windows Azure, (sử dụng một trong 3 lựa chọn mô hình thực thi đã mô tả trong bài trước) mà
+        cần đến lưu trữ dữ liệu quan hệ, SQL Database sẽ là một lựa chọn tốt. Các ứng dụng chạy bên ngoài môi trường Windows
+        Azure cũng có thể sử dụng dịch vụ này, dó đó có rất nhiều kịch bản có thể được sử dụng. Lấy ví dụ, dữ liệu được lưu
+        trữ trong SQL Database có thể được truy cập từ nhiều hệ thống phía client khác nhau như: ứng dụng để bàn, máy tính
+        cá nhân, điện thoại thông minh. Và bởi vì SQL Database cung cấp sẵn khả năng sao chép liên tục để đảm bảo tính sẵn
+        sàng cao nên giảm thiểu tối đa nguy hiểm về sự tạm dừng.
+      </p>
+      <h3 id="tables">Tables</h3>
+      <p>
+        Giả sử bạn cần tạo một ứng dụng Windows Azure mà đảm bảo truy cập nhanh tới dữ liệu đã được định kiểu, có thể mất mát, nhưng
+        không cần thiết phải thực hiện các câu lệnh truy vấn SQL phức tạp trên khối dữ liệu đó. Lấy ví dụ, bạn đang tạo ứng
+        dụng cho người sử dụng đầu cuối, để lưu trữ thông tin profile của khách hàng cho mỗi người dùng. Ứng dụng đó sẽ trở
+        nên rất phổ biến, do đó bạn cần cho phép mất mát dữ liệu, nhưng bạn sẽ không thao tác quá nhiều với dữ liệu này ngoài
+        việc lưu trữ, và thực hiện lấy dữ liệu ra một cách đơn giản. Đây chính xác là kiểu tình huống mà Windows Azure Tables
+        trở nên có ý nghĩa.
+      </p>
+      <p>
+        Đừng nhầm lẫn với cái tên: công nghệ này không cung cấp giải pháp lưu trữ quan hệ. Trong thực tế nó là một ví dụ của các
+        tiếp cận NoSQL được gọi là lưu trữ cặp khoá/giá trị (key/value). Thay vì Windows Azure cho phép ứng dụng lưu trữ
+        các thuộc tính của vài kiểu khác nhau như: chuỗi ký tự, số, và ngày tháng. Một ứng dụng có thể lấy ra một nhóm các
+        thuộc tính này bằng việc cung cấp một khoá duy nhất cho nhóm đó. Trong khi đó các toán tử phức tạp như phép join
+        không được hỗ trợ, Tables cho phép truy cập nhanh tới các dữ liệu đã được định kiểu. Do đó chúng rất dẽ mở rộng,
+        với một table có khả năng chứa hàng terabyte dữ liệu. Và dễ dàng lôi dữ liệu ra, do đó Tables sẽ rẻ hơn rất nhiều
+        so với việc lưu trữ dữ liệu quan hệ sử dụng SQL Database.
+      </p>
+      <h3 id="blobs">Blobs</h3>
+      <p>
+        Lựa chọn thứ 3 cho việc quản lý dữ liệu, Windows Azure Blobs, được thiết kế để lưu trữ dữ liệu nhị phân không cấu trúc. Giống
+        như Tables, Blobs cung cấp giải pháp lưu trữ không đắt, và một blob có thể chứa hàng terabyte. Ví dụ một ứng dụng
+        mà lưu trữ Video, hoặc sao lưu dữ liệu hoặc thông tin nhị phân có thể sử dụng Blobs cho đơn giản hoặc giá rẻ. Các
+        ứng dụng Windows Azure cũng có thể sử dụng điểu khiển Windows Azure, cho phép các blobs cung cấp giải pháp lưu trữ
+        liên tục (persistent storage) cho hệ thống file Windows được gắn trong một Windows Azure VM. Ứng dụng đó sẽ nhìn
+        thấy file Windows nguyên gốc, nhưng thực tế nội dung của file được lưu dưới dạng một blob.
+      </p>
+    </div>
+    <!-- End page content -->
+  </div>
+
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+      <br> Design by Team 02
+    </p>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+  </script>
+
+</body>
+
+</html>

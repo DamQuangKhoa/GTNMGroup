@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ADMIN</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+<!-- jQuery file -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+$(function() {
+$('#tabsmenu').tabify();
+$(".toggle_container").hide(); 
+$(".trigger").click(function(){
+	$(this).toggleClass("active").next().slideToggle("slow");
+	return false;
+});
+});
+</script>
+</head>
+<body>
+<div id="panelwrap">
+  	
+	<div class="header">
+    <div class="title"><a href="#">Quản lí bài đăng</a></div>
+    
+    <div class="header_right">Welcome Admin, <a href="#" class="settings">Settings</a> <a href="#" class="logout">Logout</a> </div>
+    
+    <div class="menu">
+    <ul>
+    <li><a href="quanliadmin.html" class="selected">Admin page</a></li>
+    <li><a href="#">Thống Kê</a></li> 
+    <li><a href="#">Quản lý bài đăng</a></li>
+    <li><a href="quanlinguoidung.html">Quản lý người dùng</a></li>
+    <li><a href="#">Help</a></li>
+    </ul>
+    </div> 
+    </div>
+    <div class="submenu">
+        <ul></ul>
+    </div>
+                    
+    <div class="center_content">  
+ 
+    <div id="right_wrap">
+    <div id="right_content">             
+    <h2>Thông tin bài đăng</h2> 
+                    
+                    
+<table id="rounded-corner">
+    <thead>
+    	<tr>
+            <th></th>
+            <th>Mã bài đăng</th>
+            <th>Người đăng</th>
+            <th>Miêu tả</th>
+            <th>Hình ảnh</th>
+            <th>Điểm thưởng</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    	<tr class="odd">
+        	<td><input type="checkbox" name="" /></td>
+            <td>001</td>
+            <td>Trần Ngọc Cường</td>
+            <td>Bootstrap là gì?</td>
+            <td><img src="images/bd1.png" width="40" height="40"></td>
+            <td>50</td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+          </tr>
+
+          <tr class="odd">
+        	<td><input type="checkbox" name="" /></td>
+            <td>002</td>
+            <td>Phạm Hoàng Sơn</td>
+            <td>Vai trò của html....</td>
+            <td><img src="images/bd2.png" width="40" height="40"></td>
+            <td>50</td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+          </tr>
+
+          <tr class="odd">
+        	<td><input type="checkbox" name="" /></td>
+            <td>001</td>
+            <td>Nguyễn Thị Hồng Sơn</td>
+            <td>Học Java căn bản</td>
+            <td><img src="images/bd3.png" width="40" height="40"></td>
+            <td>50</td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+          </tr>
+
+          <tr class="odd">
+        	<td><input type="checkbox" name="" /></td>
+            <td>001</td>
+            <td>Mai Thế Nguyễn</td>
+            <td>Tiện ích của OFFICE 2016</td>
+            <td><img src="images/bd4.jpg" width="40" height="40"></td>
+            <td>50</td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+          </tr>
+        
+        
+    </tbody>
+</table>
+
+   <ul id="tabsmenu" class="tabsmenu">
+        <li class="active"><a href="#tab1">Thêm nội dung bài đăng</a></li>
+    </ul>
+    <div id="tab1" class="tabcontent">
+        <div class="form">
+            
+            <div class="form_row">
+            <label>Tiêu đề:</label>
+            <input type="text" class="form_input" name="" />
+            </div>
+             
+            <div class="form_row">
+            <label>Nội dunng bài:</label>
+            <textarea class="form_textarea"  name=""></textarea> 
+            </div>
+            
+            <div class="form_row">
+            <label>Hình ảnh:</label>
+            <input type="text" class="form_input" name="" />
+            </div>
+            
+            <div class="form_row">
+            <input type="submit" class="form_submit" value="Đăng bài" />
+            </div> 
+            <div class="clear"></div>
+        </div>
+    </div>
+     </div>
+     </div><!-- end of right content-->
+    
+
+    <div class="sidebar" id="sidebar">
+    <h2>Thống kê bài viết</h2>
+    
+        <ul>
+            <li><a href="#"> Thống kê bài viết theo ngày</a></li>
+            <li><a href="#">Thống kê bài viết theo tháng</a></li>
+            <li><a href="#">Thống kê bài viết theo năm</a></li>
+
+        </ul>
+        
+    <h2>Quản lý bài viết</h2>
+    
+        <ul>
+            <li><a href="#">Bài viết được xem nhiều nhất</a></li>
+            <li><a href="#">Bài viết được chia sẽ nhiều nhất</a></li>
+            <li><a href="#">Bài viết có lượt like nhiều nhất</a></li>
+            <li><a href="#">Bài viết bị tố cáo</a></li>
+        </ul> 
+        
+    <h2>Bài viết được nhận quà</h2>
+    
+        <ul>
+            <li><a href="#">Edit user</a></li>
+            <li><a href="#">Add users</a></li>
+        
+        </ul>   
+        
+    </div>             
+    
+    
+    <div class="clear"></div>
+    </div> <!--end of center_content-->
+    
+    <div class="footer">
+Phần mềm được thiết kế bởi<a href="" target="_blank">Nhom 002</a>
+</div>
+
+</div>
+
+    	
+</body>
+</html>

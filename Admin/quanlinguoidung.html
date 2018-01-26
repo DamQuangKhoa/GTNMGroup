@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADMIN</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style2.css" />
+<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+<!-- jQuery file -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+$(function() {
+$('#tabsmenu').tabify();
+$(".toggle_container").hide(); 
+$(".trigger").click(function(){
+	$(this).toggleClass("active").next().slideToggle("slow");
+	return false;
+});
+});
+</script>
+<div id="panelwrap">
+  	
+	<div class="header">
+    <div class="title"><a href="#">Quản lí người dùng</a></div>
+    
+    <div class="header_right">Welcome Admin, <a href="#" class="settings">Settings</a> <a href="#" class="logout">Logout</a> </div>
+    
+    <div class="menu">
+    <ul>
+    <li><a href="quanliadmin.html" class="selected">Admin page</a></li>
+    <li><a href="#">Thống Kê</a></li> 
+    <li><a href="quanlibaidang.html">Quản lý bài đăng</a></li>
+    <li><a href="#">Quản lý người dùng</a></li>
+    <li><a href="#">Help</a></li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    <div class="submenu">
+        <ul></ul>
+    </div>          
+                    
+    <div class="center_content">  
+ 
+    <div id="right_wrap">
+    <div id="right_content">             
+    <h2>Danh sách Admin</h2> 
+                    
+                    
+<table id="rounded-corner">
+    <thead>
+    	<tr>
+        	<!-- <th></th> -->
+            <th>Mã User </th>
+            <th>Avarta</th>
+            <th>Tên</th>
+            <th>Địa điểm</th>
+            <th>Điểm thưởng</th>
+            <th></th>
+            <th></th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+        <tfoot>
+    	<tr>
+        	<td colspan="12">Wellcom Users!</td>
+        </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+    <tr class="odd">
+    	    <td>001</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn A</td>
+            <td>Thủ Đức , TPHCM</td>
+            <td>100</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+    	<tr class="even">
+        	<td>002</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn B</td>
+            <td>Tân Biên, Tây Ninh</td>
+            <td>150</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+        <tr class="even">
+        	<td>003</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn C</td>
+            <td>Rạch Giá, Kiên Giang</td>
+            <td>150</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+        <tr class="even">
+        	<td>004</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn D</td>
+            <td>Bến Tre</td>
+            <td>30</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+        <tr class="even">
+        	<td>005</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn E</td>
+            <td>Thành phố Hồ Chí Minh</td>
+            <td>1000</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+         <tr class="even">
+            <td>005</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn F</td>
+            <td>Đất Phổ, Quãng Ngãi</td>
+            <td>1000</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+         <tr class="even">
+            <td>005</td>
+            <td><img src="images/avt.jpg" width="40" height="40"></td>
+            <td>Nguyễn Văn G</td>
+            <td>Đống Đa, Hà Nội</td>
+            <td>1000</td>
+            <td></td>
+            <td><a href="#"><img src="images/" alt="" title="" border="0"/></a></td>
+            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+        </tr>
+        
+        
+    	    
+    </tbody>
+</table>
+            <div id="pageNumber">
+                <a href="#">Đầu tiên</a>
+                <a class="Selected" href="#">1</a>
+                <a class="Selected" href="#">2</a>
+                <a class="Selected" href="#">3</a>
+                <a href="#">Sau cùng</a>
+            </div>
+
+	<div class="form_sub_buttons">
+	<a href="#" class="button green">Add</a>
+    </div>
+   
+     </div>
+     </div><!-- end of right content-->
+   
+    <div class="clear"></div>
+    </div> <!--end of center_content-->
+    
+    <div class="footer">
+Admin by <a href="#" target="_blank">Nhom 002</a>
+</div>
+
+
+</body>
+</html>

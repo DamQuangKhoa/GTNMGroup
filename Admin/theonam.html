@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+<!-- jQuery file -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+
+<title>Thống kê theo năm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <script src="Chart.min.js"></script>
+</head>
+<body>
+<div id="panelwrap">
+  	
+	<div class="header">
+    <div class="title"><a href="#">Admin</a></div>
+    
+    <div class="header_right">Welcome Admin, <a href="#" class="settings">Settings</a> <a href="#" class="logout">Logout</a> </div>
+    
+    <div class="menu">
+    <ul>
+    <li><a href="#" class="selected">Admin page</a></li>
+    <li><a href="#">Thống Kê</a></li> 
+    <li><a href="quanlibaidang.html">Quản lý bài đăng</a></li>
+    <li><a href="quanlinguoidung.html">Quản lý người dùng</a></li>
+    <li><a href="#">Help</a></li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    <div class="submenu">
+        <ul></ul>
+    </div>          
+                    
+    <div class="center_content">  
+ 
+    <div id="right_wrap">
+    <div id="right_content">             
+    
+<!-- line chart canvas element -->
+        <canvas id="buyers" width="600" height="400"></canvas>
+    <script > 
+	// line chart data
+	var buyerData = {
+		labels : ["năm 2015","Năm 2016","Năm 2017","Năm 2018","Năm 2019","Năm 2020"],
+		datasets : [
+		{
+				fillColor : "rgba(172,194,132,0.4)",
+				strokeColor : "#ACC26D",
+				pointColor : "#fff",
+				pointStrokeColor : "#9DB86D",
+				data : [203,156,99,251,305,247]
+			}
+		]
+	}
+	
+	// get line chart canvas
+	var buyers = document.getElementById('buyers').getContext('2d');
+
+	// draw line chart
+	new Chart(buyers).Line(buyerData);
+	</script>   
+	 </div>
+     </div><!-- end of right content-->
+                     
+                    
+    <div class="sidebar" id="sidebar">
+    <h2>Quản lý người dùng </h2>
+    
+        <ul>
+            <li><a href="#" class="selected">Thống kê theo ngày</a></li>
+            <li><a href="#">Thống kê theo tháng</a></li>
+            <li><a href="#">Thống kê theo năm</a></li>
+            
+        </ul>
+        
+    <h2>Quản lý bài viết</h2>
+    
+        <ul>
+            <li><a href="#">Thống kê bài viết</a></li>
+            <li><a href="#">Số người truy cập</a></li>
+            <li><a href="#">Bài viết được yêu thích</a></li>
+           
+        </ul> 
+        
+    <h2>Quản lý Admin</h2>
+    
+        <ul>
+            <li><a href="#">Edit user</a></li>
+            <li><a href="#">Add users</a></li>
+            <li><a href="#">Manage users</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>   
+         
+           
+    
+    </div>             
+    
+    
+    <div class="clear"></div>
+    </div> <!--end of center_content-->
+    
+    <div class="footer">
+Admin by <a href="#" target="_blank">Nhom 002</a>
+</div>
+
+</body>
+</html>

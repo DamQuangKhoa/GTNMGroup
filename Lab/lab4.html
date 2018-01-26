@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <link rel="stylesheet" href="../assets/library/bootstrap.css">
+        <link rel="stylesheet" href="../assets/library/jquery.js">
+        <link rel="stylesheet" href="../assets/theme/css/lab.css">
+        <link rel="stylesheet" href="../assets/theme/css/button_lab.css">
+        <script src="../assets/library/jquery.js"" ></script>
+         <script src="../assets/library/bootstrap.js"" ></script>
+         <script src= "../assets/theme/js/lab.js"></script>
+            <link rel="stylesheet" href="../assets/theme/menu2/menu_lab.css">
+
+</head>
+<body>
+	<!-- content -->
+	<div id="background-carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image:url(../assets/images/desktop.jpg)"></div>
+        <div class="item" style="background-image:url(../assets/images/desktop.jpg)"></div>
+        <div class="item" style="background-image:url(http://lorempixel.com/1200/800/food/1/)"></div>  
+      </div>
+    </div>
+</div>
+
+ 
+<div id="content-wrapper">
+     <div id="menu"></div>
+<!-- PAGE CONTENT -->
+    <div class="container">
+        <div class="page-header"><p class="title">Lab 4: Giới Thiệu <span>CSS</span></p></div>
+        <div class="well"><h4>CSS là gì?</h4> 
+            <p>CSS là chữ cái viết tắt của Cascading Style Sheets , nó chỉ đơn thuần là một dạng file text với phần tên mở rộng là .css.</p>
+            <p>Trong Style Sheets này chứa những câu lệnh CSS. Mỗi câu lệnh của CSS sẽ định dạng một phần nhất định của HTML ví dụ như: font chữ thường, đường viền , màu nền , căn chỉnh hình ảnh.</p>
+            <p>Trước đây khi chưa có CSS , những người thiết kế web phải trộn lẫn giữa các thành phần trình bày và nội dung với nhau. Nhưng với sự xuất hiện của CSS , người ta có thể tách rời hoàn toàn phần trình bày và nội dung. Giúp cho phần code của trang web cũng thu gọn và quan trọng hơn cả là dễ chỉnh sửa hơn..</p>
+            
+</p>
+        </div><!-- End Well -->
+    </div><!-- End Container -->
+<!-- PAGE CONTENT -->
+<div class="container">
+    <div class="row">
+    
+    <div class="col-md-12">       <!-- Standard button -->
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" id="btnTim" class="btn btn-primary ribbon">Các Thành Phần</button>
+
+<div class="well">
+	<h4> </h4> 
+                <p>
+           Cú pháp cơ bản của CSS bao gồm 3 phần: vùng chọn (selector), thuộc tính (property) và giá trị (value).</p>
+
+            <p><img src="img/css3.png"></p>
+
+            <p>Vùng chọn: là cách xác định các thẻ HTML dựa trên cấu trúc phân cấp của HTML. Vùng chọn có thể được tạo nên dựa trên nhiều yếu tố như định danh (id), tên lớp (class), quan hệ cha – con – hậu duệ… Bạn có thể xem ví dụ trực quan về một số vùng chọn CSS <a href="http://karmiphuc.com/tools/htmlcss/"> tại đây</a>, hoặc đọc thêm tại <a href="https://www.w3schools.com/cssref/css_selectors.asp">  W3S.</a></p>
+            <p>Thuộc tính: là yếu tố bạn muốn thay đổi ở các thẻ HTML thuộc vùng chọn. Danh sách các thuộc tính có thể xem thêm  tại <a href="https://www.w3schools.com/cssref/css_selectors.asp">  W3S.</a></p>
+            <p>Giá trị: mỗi thuộc tính sẽ yêu cầu một giá trị khác nhau. Đó có thể là 1 từ khóa định sẵn (none, block), một tên màu hay mã màu (black, white, #000, #FFFFFF), hay một giá trị kích thước tính bằng px, em, rem, %.</p>
+</div>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" id="btnXanh" class="btn btn-success ribbon">Công cụ</button>
+<div class="well">
+                <h3>#ID</h3>
+                <p>
+Dấu # được sử dụng để chọn một thẻ HTML có định danh cụ thể (ID). Do đó, bản chất của việc sử dụng ID không thể tái sử dụng. Hãy chắc chắn rằng việc gán ID cho thẻ HTML và chọn thẻ này bằng ID này là cách duy nhất bạn có thể định dạng cho nó.
+                </p>
+            <p><img src="img/css4.png"></p>
+                 <h3>.Class</h3>
+                 <p>Dấu “.” đại diện cho tên lớp. Nhiều thẻ HTML có thể có cùng tên lớp. Do đó, sự khác nhau giữa ID và Class là: ID chỉ cho phép chọn 1 phần tử, còn Class cho phép bạn chọn nhiều thẻ HTML cùng lúc.</p>
+                 <p><img src="img/css5.png"></p>
+                 <h3>A.Class</h3>
+                 <p>Vùng chọn này giúp xác định tất cả các thẻ HTML cùng thuộc một lớp.</p>
+            <p><img src="img/css5.png"></p>
+                <h3>A B</h3>
+                <p>Vùng chọn này còn được gọi là vùng chọn hậu duệ (descendant). Vùng chọn này sẽ xác định tất cả các thẻ B nằm bên trong thẻ A, không kể phân cấp, ngôi thứ như là con, là cháu, là chắt chút chít gì đó</p>
+            <p><img src="img/css6.png"></p>
+
+            <h3> A>B </h3>
+            <p>Vùng chọn này còn được gọi là vùng chọn con (child), và có nét tương đồng với vùng chọn hậu duệ. Tuy nhiên, vùng chọn này chỉ xác định tất cả các thẻ B là con trực tiếp của thẻ A, chứ không nằm bên trong thẻ nào khác.</p>
+            <p><img src="img/css7.png"></p>
+            <p>Xem ví dụ trực quan với giải thích cụ thể hơn <a href="http://karmiphuc.com/tools/htmlcss/"> tại đây </a> </p>
+</div>
+<!-- Contextual button for informational alert messages -->
+<button type="button" id="btnXanhNhat" class="btn btn-info ribbon">Vai trò</button>
+<div class="well">
+              <h4>CSS đóng vai trò gì trong website?</h4>
+            	<p>CSS dùng để thay đổi trình bày, bố cục, màu sắc, phông chữ của các ngôn ngữ đánh dấu…. Trong đó sử dụng CSS nhiều và phổ biến nhất là HTML. Bởi vì việc sử dụng CSS kết hợp với HTML thì người viết sẽ không cần lúc nào cũng phải định dạng lại 1 nội dung cho nhiều trang HTML khác nhau.</p>
+            <p>Nếu như bình thường để hiển thị màu sắc hay thay đổi font cho từng trang. Bạn phải vô từng trang mà tùy chỉnh lại style của thẻ đó trong HTML.</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

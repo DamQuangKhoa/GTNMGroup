@@ -1,0 +1,156 @@
+body {
+    box-sizing: border-box;
+    font-weight: 400;
+    color: #212121;
+    text-rendering: optimizeLegibility;
+    background-color: #BDBDBD;
+}
+
+.ck-editor__editable {
+    min-height: 22em;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+.posting-preview {
+    text-decoration: none;
+    background-color: #C5CAE9;
+    float: right;
+    padding: 1% 5%;
+    border-radius: 4px;
+}
+
+.posting-submit {
+    text-decoration: none;
+    background-color: #607D8B;
+    float: right;
+    margin: 0 1%;
+    padding: 1% 5%;
+    border-radius: 4px;
+}
+.btn:link,
+.btn:active,
+.btn:visited,
+.btn:hover {
+    text-decoration: none;
+    
+}
+.posting input[name=title]::placeholder{
+   color: #BDBDBD;
+}
+
+.posting input[name=title] {
+    border: 0;
+    font-weight: 700;
+    font-size: 150%;
+    width: 90%;
+    margin: 1% 0;
+    padding: 1%;
+    overflow: visible;
+}
+
+.posting input[name=tag-text] {
+    border: 0;
+    margin: 0 0 2% 1%;
+    width: 70%;
+    overflow: scroll;
+}
+
+.posting input[name=tag-text]::placeholder {
+   color: #BDBDBD;
+}
+
+.container {
+    min-width: 320px;
+}
+
+.posting {
+    width: 58%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 21%;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 1px #757575;
+}
+
+.user-info {
+    width: 90%;
+    float: right;
+    text-align: center;
+}
+
+.user-info-board {
+    width: 19%;
+    position: fixed;
+    height: auto;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+}
+
+.avatar {
+    display: block;
+    float: right;
+    margin-top: 5%;
+    margin-right: 20%;
+    width: 50%;
+    height: auto;
+    background-color: #CFD8DC;
+    border-radius: 50%;
+}
+
+.fullname {
+    font-size: 150%;
+    font-weight: 300;
+    margin: 0;
+}
+
+.username {
+    font-weight: 700; 
+    margin: 0;
+    margin-bottom: 20%;
+    color: #757575;
+}
+.username:before {
+    content: "@";
+}
+
+.other-info {
+    text-align: left;
+}
+
+.online {
+    font-size: 80%;
+    color: green;
+}
+
+.more-aside {
+    width: 15%;
+    float: right;
+    clear: left;
+}
+
+@media only screen and (max-width: 720px) {
+    .user-info-board {
+        display: none;
+    }
+    .posting {
+        width: 95%;
+        float: none;
+        margin: 1% auto;
+    }
+    
+    .aside-more {
+        display: none;
+    }
+}

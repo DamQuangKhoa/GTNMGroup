@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.nenxam {
+    height: 600px;
+}
+
+.nenxam>row {}
+
+nav p {
+    padding-top: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="password"] {
+    margin-bottom: 7px;
+}
+
+.col-xs-5 button.btn.btn-success {
+    background-color: #61a451;
+}
+input.name {
+    width: 198px;
+    height: 40px;
+}
+.col-xs-5 input[type="text"] {
+    margin-bottom: 7px;
+}
+
+input.line {
+    width: 400px;
+    height: 40px;
+}
+
+input.1nua{
+    
+}
+nav input[type="text"] {
+    /* padding-bottom: 15px; */
+    margin-bottom: 15px;
+}
+
+nav input[type="text"] {
+    margin-bottom: 20px;
+}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0px;
+}
+
+.col-xs-5 p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.col-xs-5 h2 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+nenxam h2 {}
+
+.nenxam {
+    background-color: #e8eaed;
+}
+
+.col-xs-5.col-sm-5.col-md-5.col-lg-5 {
+    /* background: #e8eaed; */
+}
+
+.col-xs-5.col-sm-5.col-md-5.col-lg-5 h2 {}
+
+.col-xs-5.col-sm-5.col-md-5.col-lg-5 {
+    background-color: #e8eaed;
+}
+
+li input[type="text"] {
+    /* margin: 0px; */
+}
+
+
+li button.btn.btn-success {
+    margin-top: 25px;
+    width: 30p;
+}
+
+nav button.btn.btn-success {
+    margin-top: 45px;
+}
+
+li p {
+    margin: 0px;
+}
+
+li input[type="text"] {}
+
+li {
+    margin-right: 45px;
+}
+
+nav.navbar.navbar-default {
+    background-color: #29729f;
+}
+.red{
+    border: 1px solid red;
+}

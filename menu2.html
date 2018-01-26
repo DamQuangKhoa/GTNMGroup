@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="assets/library/bootstrap.css">
+    <link rel="stylesheet" href="assets/theme/menu/menu_lab.css">
+
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<ul id="nav">
+<li class="site-name"><a href="#"> </a></li>
+    <li class="facebook"><a href="#">Lab</a>
+        <ul>
+        <li><a href="azure.html">Lab 1</a></li>
+        <li><a href="lab2.html">Lab 2</a></li>
+        <li><a href="lab4.html">Lab 3</a></li>
+        
+        </ul>
+    </li>
+    <li class="yahoo"><a href="#">About My Team</a>
+        <ul>
+        <li><a href="../index.html">Home »</a>            
+            <ul>
+                <li><a href="#">Đàm Quang Khoa</a></li>
+                <li><a href="#">Mai Thế Nguyễn</a></li>
+                <li><a href="#">Nguyễn Thị Hồng Sơn</a></li>
+                <li><a href="#">Trần Ngọc Cường</a>
+                <ul>
+                    <li><a href="#">abc</a></li>
+                    <li><a href="#">abc</a></li>
+                </ul>
+                </li>
+            </ul>
+        </li>
+      <!--   <li><a href="#">Yahoo Search</a></li>
+        <li><a href="#">Yahoo Answsers</a></li> -->
+        </ul>
+    </li>
+    <li class="google"><a href="#">Group Diary</a>
+        <ul>
+        <li><a href="#">Week 1</a></li>
+        <li><a href="#">Week 2</a></li>
+        <li><a href="#">Week 3 »</a>
+            <ul>
+                <li><a href="#">abc</a></li>
+                <li><a href="#">abc</a></li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+</ul>
+	</div>
+</div>
+  <script src="assets/library/jquery.js"" ></script>
+ <script src="assets/library/bootstrap.js"" ></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#nav li").hover(
+    function(){
+        $(this).children('ul').hide();
+        $(this).children('ul').slideDown('fast');
+    },
+    function () {
+        $('ul',this).slideUp('fast');            
+    });
+
+     
+});
+
+
+</script>
+
+</body>
+</html>

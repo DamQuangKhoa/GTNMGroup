@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900&amp;subset=vietnamese" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="import" href="../shared_header/header.html" for="main-header">
+        <title>Post an article</title>
+    </head>
+    <body>
+        <div class="container">
+        <header id="main-header">
+            </header>
+                    <aside class="user-info-board">
+            <div class="header-space"></div>
+            <img class="avatar" src="resources/img/avatar.ico">
+            <div class="user-info">
+            <p class="fullname">Mathen Jee<span class="online">&nbsp;&nbsp;<i class="fas fa-genderless"></i></span></p>
+            <p class="username">mathenjee</p>
+            <div class="other-info">
+                <p><i class="fas fa-graduation-cap"></i>&nbsp;Student</p>
+                <p><i class="fas fa-university"></i>&nbsp;Study at <strong>Nong Lam University</strong></p>
+                <p><i class="fab fa-reddit-alien"></i>&nbsp;Come from <strong>Mars</strong></p>
+                <p><i class="fas fa-heart"></i>&nbsp;Single *af*</p>   <p><i class="fas fa-transgender-alt"></i>&nbsp;*totally confused*</p>
+            </div>
+        </div>
+            </aside>
+            
+            <aside class="more-aside"></aside>
+            
+        <div class="posting">
+            <i class="fas fa-edit" style="font-size: 150%; color: #455A64;"></i><input type="text" id="posting-title" name="title" placeholder="Title goes here..." maxlength="140" required>
+           <textarea name="content" id="editor" required></textarea>
+            <br>
+            <i class="fas fa-tags" style="color: #455A64; margin-left: 2%;"></i><input type=text name="tag-text" placeholder="#tag goes here;">
+            <div class="posting-button">
+                <a href="#" class="btn posting-submit"><i class="fas fa-check-circle"></i>&nbsp;Post</a>
+                <a href="#" class="btn posting-preview"><i class="fas fa-eye"></i>&nbsp;Preview</a>
+            </div>
+            </div>
+            </div>
+        
+        
+        <script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-alpha.2/classic/ckeditor.js"></script>
+        <script>
+ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+        toolbar: [ 'headings', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+        heading: {
+            options: [
+                { modelElement: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                { modelElement: 'heading1', viewElement: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                { modelElement: 'heading2', viewElement: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+            ]
+        }
+    } )
+    .catch( error => {
+        console.log( error );
+    } );
+</script>
+<script src="resources/js/script.js"></script>
+<script src="../shared_header/headerloader.js"></script>
+    </body>
+</html>

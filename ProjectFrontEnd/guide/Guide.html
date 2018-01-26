@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <link rel="stylesheet" href="library/bootstrap.css">
+        <link rel="stylesheet" href="library/jquery.js">
+        <link rel="stylesheet" href="theme/css/lab.css">
+<!--        <link rel="stylesheet" href="theme/css/menu.css">-->
+        <link rel="stylesheet" href="theme/css/button_lab.css">
+        <script src="library/jquery.js"></script>
+         <script src="library/bootstrap.js" ></script>
+         <script src= "theme/js/lab.js"></script>
+          <script  src="library/angular.min.js"></script>
+          <!-- <script  src="../assets/theme/menu2/menu.js"></script> -->
+           
+<link rel="import" href="../shared_header/header.html" for="main-header">
+
+
+</head>
+<style type="text/css">
+  #color1 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #4367B0;
+    border-top: 20px solid #4367B0;
+    border-bottom: 20px solid #4367B0;
+    border-left: 20px solid #4367B0;
+  }
+  #color2 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #ffffff;
+    border-top: 20px solid #ffffff;
+    border-bottom: 20px solid #ffffff;
+    border-left: 20px solid #ffffff;
+  }
+  #color3 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #f6f7f9;
+    border-top: 20px solid #f6f7f9;
+    border-bottom: 20px solid #f6f7f9;
+    border-left: 20px solid #f6f7f9;
+  }
+  #color4 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #D73814;
+    border-top: 20px solid #D73814;
+    border-bottom: 20px solid #D73814;
+    border-left: 20px solid #D73814;
+  }
+  #color5 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #f9f9f9;
+    border-top: 20px solid #f9f9f9;
+    border-bottom: 20px solid #f9f9f9;
+    border-left: 20px solid #f9f9f9;
+  }
+  #color6 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #4274D7;
+    border-top: 20px solid #4274D7;
+    border-bottom: 20px solid #4274D7;
+    border-left: 20px solid #4274D7;
+  }
+  #color7 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #39B3D7;
+    border-top: 20px solid #39B3D7;
+    border-bottom: 20px solid #39B3D7;
+    border-left: 20px solid #39B3D7;
+  }
+   #color8 {
+    height: 0px;
+    width: 0px;
+    border-right: 20px solid #78d739;
+    border-top: 20px solid #78d739;
+    border-bottom: 20px solid #78d739;
+    border-left: 20px solid #78d739;
+  }
+</style>
+<body style="background-color: #e9ebee">
+<header id="main-header">
+            </header>
+
+	<!-- content -->
+	
+ 
+ 
+<div id="content-wrapper">
+	<div id="menu1"> </div>
+<!-- PAGE CONTENT -->
+    
+<!-- PAGE CONTENT -->
+<div class="container" style="margin-left: 300px; margin-top: 70px;">
+    <div class="row">
+    
+    <div class="col-md-8">       <!-- Standard button -->
+
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" id="btnTim" class="btn btn-primary">LAYOUT</button>
+
+          <div class="well">
+          	<p>- Grid</p>
+            <p>- Sử dụng mẫu F-Layout</p>
+            <p>- Sử dụng collapse</p>
+          	
+          </div>
+
+          <!-- Indicates a successful or positive action -->
+          <button type="button" id="btnXanh" class="btn btn-primary">TYPOGRAPHY</button>
+          <div class="well">
+          	<p>- Các thẻ h1, h2, h3, h4 sử dụng font inherit</p>
+            <p>- Font chính trong body ở các trang index, trang cá nhân, styleguide là Helvetica Neue, Helvatica, Arial, sans-serif, Font size thẻ < a > là 14px, thẻ < p > là 12px.</p>
+            <p>- Font chính trong trang đổi thưởng là Verdana, Geneva, sans-serif. Font size 13px/16px</p>
+            <p></p>
+
+          </div>
+          <!-- Contextual button for informational alert messages -->
+          <button type="button" id="btnXanhNhat" class="btn btn-primary">COLOR PALETTE</button>
+          <div class="well">
+
+          	<div class="row"> <!--row-1 -->
+              <!--color-1 -->
+              <div class="col-sm-3">
+                  <div id="color1" style=""></div><br>
+
+                  <div>
+                     <p>Mã màu: #4367B0</p>
+                     <p>Background menu front-end</p>
+                  </div>   
+               </div>
+ <!--color-2 -->
+               <div class="col-sm-3">
+                  <div id="color2" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #ffffff</p>
+                     <p>Background index, trang cá nhân, điểm thưởng</p>
+                  </div>
+                </div>
+ <!--color-3 -->
+                <div class="col-sm-3">
+                  <div id="color3" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #f6f7f9</p>
+                     <p>Background sildebar, right-bar, trang styleguide, trang cá nhân</p>
+                  </div>
+                </div>
+ <!--color-4 -->
+                <div class="col-sm-3">
+                  <div id="color4" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #D73814</p>
+                     <p>Background button trang index, trang cá nhân, trang style guide</p>
+                  </div>
+
+                </div>
+              </div><br>
+              <!--end-row-1 -->
+              <div class="row">
+
+                <div class="col-sm-3">
+                  <div id="color5" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #f9f9f9</p>
+                     <p>Background button trang index, trang cá nhân</p>
+                  </div>
+                </div>  
+
+                <div class="col-sm-3">
+                  <div id="color6" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #4274D7</p>
+                     <p>Background button trang index, trang cá nhân</p>
+                  </div>
+                 </div> 
+
+                <div class="col-sm-3">
+                  <div id="color7" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #39B3D7</p>
+                     <p>Background button trang index, trang cá nhân</p>
+                  </div>
+                </div>
+
+                <div class="col-sm-3">
+                  <div id="color8" style=""></div><br>
+                  <div>
+                     <p>Mã màu: #78d739</p>
+                     <p>Background button trang index, trang cá nhân</p>
+                  </div>
+                </div>  
+
+              </div>
+
+            </div>
+          <button type="button" id="btnImg" class="btn btn-primary">IMAGE SIZE</button>
+
+            <div class="well">
+            <h3>Trang index</h3>
+                <p>   - Ảnh đại diện trang index: 100x100 (px)</p>
+                <p>   - Ảnh bài đăng trang index: 640x400 (px)</p>
+                <p>   - Ảnh Right-bar trang index: 64x64 (px), Tùy biến</p>
+                <p>   - Ảnh sildebar trang index: 32x32</p>
+            <h3>Trang cá nhân</h3>
+                <p>   - Ảnh bìa: 1140x456 (px)</p>
+                <p>   - Ảnh đại diện: 171x171 (px)</p>
+                <p>   - Ảnh bài đăng: 300x284 (px)</p>
+                <p>   - Ảnh cá nhân left-bar: 150x100 , 90x100 (px)</p>
+                <p>   - Ảnh khung bài đăng: 90x100 (px)</p>
+                <p>   - Ảnh đại diện khung bạn bè left-bar: 90x100 (px)</p>
+            <h3>Trang điểm thưởng</h3>
+                <p>   -Ảnh đại diện: 90x90 (px)</p>
+                <p>   -Ảnh phần thưởng 200x150 (px)</p>
+                
+            </div>
+
+          <button type="button" id="btnImg-1" class="btn btn-primary">FILE AND DIRECTORY</button>
+
+            <div class="well">
+             <img alt="" src="theme/image/Capture.PNG" style="width: 150px; height: 150px;">
+              
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../shared_header/headerloader.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <link rel="stylesheet" href="../assets/library/bootstrap.css">
+        <link rel="stylesheet" href="../assets/library/jquery.js">
+        <link rel="stylesheet" href="../assets/theme/css/lab.css">
+        <link rel="stylesheet" href="../assets/theme/css/button_lab.css">
+        <script src="../assets/library/jquery.js"" ></script>
+         <script src="../assets/library/bootstrap.js"" ></script>
+         <script src= "../assets/theme/js/lab.js"></script>
+      <link rel="stylesheet" href="../assets/theme/menu2/menu_lab.css">
+</head>
+<body>
+	<!-- content -->
+	<div id="background-carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image:url(../assets/images/desktop.jpg)"></div>
+        <div class="item" style="background-image:url(../assets/images/desktop.jpg)"></div>
+        <div class="item" style="background-image:url(http://lorempixel.com/1200/800/food/1/)"></div>  
+      </div>
+    </div>
+</div>
+
+ 
+<div id="content-wrapper">
+     <div id="menu"></div>
+<!-- PAGE CONTENT -->
+    <div class="container">
+        <div class="page-header"><p class="title">Lab 2: Giới Thiệu <span>HTML</span></p></div>
+        <div class="well"><h4>HTML là gì?</h4> 
+            <p>HTML là chữ viết tắt của cụm từ HyperText Markup Language (dịch là Ngôn ngữ đánh dấu siêu văn bản) được sử dụng để tạo một trang web, trên một website có thể sẽ chứa nhiều trang và mỗi trang được quy ra là một tài liệu HTML (thi thoảng mình sẽ ghi là một tập tin HTML). Cha đẻ của HTML là Tim Berners-Lee, cũng là người khai sinh ra World Wide Web và chủ tịch của World Wide Web Consortium (W3C – tổ chức thiết lập ra các chuẩn trên môi trường Internet).</p>
+            <p>Một tài liệu HTML được hình thành bởi các phần tử HTML (HTML Elements) được quy định bằng các cặp thẻ (tag), các cặp thẻ này được bao bọc bởi một dấu ngoặc ngọn (ví dụ < html>) và thường là sẽ được khai báo thành một cặp, bao gồm thẻ mở và thẻ đóng (ví < strong> dụ </ strong> và ). Các văn bản muốn được đánh dấu bằng HTML sẽ được khai báo bên trong cặp thẻ (ví dụ < strong>Đây là chữ in đậm</ strong>). Nhưng một số thẻ đặc biệt lại không có thẻ đóng và dữ liệu được khai báo sẽ nằm trong các thuộc tính (ví dụ như thẻ < img>).</p>
+            <p>Một tập tin HTML sẽ bao gồm các phần tử HTML và được lưu lại dưới đuôi mở rộng là .html hoặc .htm.<ba></p>
+            
+</p>
+        </div><!-- End Well -->
+    </div><!-- End Container -->
+<!-- PAGE CONTENT -->
+<div class="container">
+    <div class="row">
+    
+    <div class="col-md-12">       <!-- Standard button -->
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" id="btnTim" class="btn btn-primary ribbon">Các Thành Phần</button>
+
+<div class="well">
+	<h4>HTML được xử lý ra sao?</h4> 
+                <p>
+            Khi một tập tin HTML được hình thành, việc xử lý nó sẽ do trình duyệt web đảm nhận. Trình duyệt sẽ đóng vai trò đọc hiểu nội dung HTML từ các thẻ bên trong và sẽ chuyển sang dạng văn bản đã được đánh dấu để đọc, nghe hoặc hiểu (do các bot máy tính hiểu).
+            Để kiểm tra, bạn có thể sử dụng khung nội dung bên dưới và chuyển qua lại giữa phần HTML và Result để xem kết quả của một tập tin HTML sau khi được xử lý.</p>
+
+            <h4>Cấu trúc một đoạn HTML</h4>
+            <p>Như mình đã nói ở trên, HTML sẽ được khai báo bằng các phần tử bởi các từ khóa. Nội dung nằm bên trong cặp từ khóa sẽ là nội dung bạn cần định dạng với HTML. Ví dụ dưới đây là một đoạn HTML khai báo một đoạn văn bản.
+                01
+                < p>Đây là một đoạn văn bản trong HTML.< /p>
+            Ngoài ra, trong các thẻ còn có các thuộc tính, thuộc tính sẽ đặt bên trong thẻ mở đầu, mỗi thuộc tính sẽ có giá trị được đặt trong dấu ngoặc kép và cách nhau bởi dấu bằng (=) với tên thuộc tính. Ví dụ dưới đây là một thẻ có sử dụng thuộc tính-
+                01
+                < form action="https://thachpham.com"> < /form>
+            Một thẻ có thể sử dụng nhiều thuộc tính chứ không phải chỉ một thuộc tính nhé.
+            </p>
+	
+</div>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" id="btnXanh" class="btn btn-success ribbon">Công cụ</button>
+<div class="well">
+            	<h4> Dùng chương trình gì để tạo tập tin HTML?</h4>
+                <p>
+            HTML là một tập tin siêu văn bản nên bạn có thể dùng các chương trình soạn thảo văn bản không có chức năng định dạng văn bản để tạo ra một tập tin HTML. Trong Windows, bạn có thể dùng Notepad, Eclipse, Netbeen, Subline Text... để tạo ra một tập tin HTML, còn trên Mac thì có thể dùng TextEdit và Vim trên các hệ điều hành Linux khác. Miễn là sau đó bạn phải lưu tập tin thành đuôi .html và sử dụng trình duyệt website để đọc nó.
+                </p>
+                 <p><img src="lab2.1.png"></p>
+                 <h4>Tài nguyên tham khảo HTML</h4>
+                <p>  Truy cập <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"> tại đây</a> để có thể nắm được hết các thẻ trong html ! Và những tùy biến trong html một cách đầy đủ nhất !</p>
+
+
+</div>
+<!-- Contextual button for informational alert messages -->
+<button type="button" id="btnXanhNhat" class="btn btn-info ribbon">Vai trò</button>
+<div class="well">
+              <h4>HTML đóng vai trò gì trong website?</h4>
+            	<p>
+
+            Như mình đã nói, HTML là một ngôn ngữ đánh dấu siêu văn bản nên nó sẽ có vai trò xây dựng cấu trúc siêu văn bản trên một website, hoặc khai báo các tập tin kỹ thuật số (media) như hình ảnh, video, nhạc.</p>
+            <p><img src="lab2.2.png"></p>
+            <p> Điều đó không có nghĩa là chỉ sử dụng HTML để tạo ra một website mà HTML chỉ đóng một vai trò hình thành trên website. Ví dụ một website như Thachpham.com sẽ được hình thành bởi:</p>
+            <h5>HTML:</h5> – Xây dựng cấu trúc và định dạng các siêu văn bản.
+            <h5>CSS:</h5> – Định dạng các siêu văn bản dạng thô tạo ra từ HTML thành một bố cục website, có màu sắc, ảnh nền,….
+            <h5>Javascript</h5> – Tạo ra các sự kiện tương tác với hành vi của người dùng (ví dụ nhấp vào ảnh trên nó sẽ có hiệu ứng phóng to).
+            <h5>PHP</h5> – Ngôn ngữ lập trình để xử lý và trao đổi dữ liệu giữa máy chủ đến trình duyệt (ví dụ như các bài viết sẽ được lưu trong máy chủ).
+            <h5>MySQL</h5> – Hệ quản trị cơ sở dữ liệu truy vấn có cấu trúc (SQL – ví dụ như các bài viết sẽ được lưu lại với dạng dữ liệu SQL).
+            <p>Nhưng ở đây, tạm thời bạn chỉ cần quan tâm đến HTML mà thôi. Dễ hiểu hơn, bạn hãy nghĩ rằng nếu website là một cơ thể hoàn chỉnh thì HTML chính là bộ xương của cơ thể đó, nó như là một cái khung sườn vậy.</p>
+
+            <p>Như vậy, dù website thuộc thể loại nào, giao tiếp với ngôn ngữ lập trình nào để xử lý dữ liệu thì vẫn phải cần HTML để hiển thị nội dung ra cho người truy cập xem.</p>
+
+            <h5>Nhân tiện đây mình cũng nói luôn, website có hai loại chính:</h5>
+
+            <p>Website tĩnh (static web) – Là một website không giao tiếp với máy chủ web để gửi nhận dữ liệu mà chỉ có các dữ liệu được khai báo sẵn bằng HTML và trình duyệt đọc.</p>
+            <p>Website động (dynamic web) – Là một website sẽ giao tiếp với một máy chủ để gửi nhận dữ liệu, các dữ liệu đó sẽ gửi ra ngoài cho người dùng bằng văn bản HTML và trình duyệt sẽ hiển thị nó. Để một website có thể giao tiếp với máy chủ web thì sẽ dùng một số ngôn ngữ lập trình dạng server-side như PHP, ASP.NET, Ruby,..để thực hiện. Ví dụ như một website làm bằng WordPress là website động.</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
