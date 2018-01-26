@@ -75,7 +75,7 @@ var data = [
         "id": "admin",
         "req_content": "<p>Trang Admin</p>",
         "des_img": ["../Chucnang/images/trangadmin.png"],
-        "des_url": "https://drive.google.com/drive/u/1/folders/1uttdZeYBu1Oeq0HrqZyqigFHpkXcLtaU",
+        "des_url": "",
         "impl_iframe": "../Admin/Admin.html"
     },
 
@@ -83,7 +83,7 @@ var data = [
         "id": "quanlybaidang",
         "req_content": "<p>Trang quản lí bài đăng</p>",
         "des_img": ["../Chucnang/images/quanlybaidang.png"],
-        "des_url": "https://drive.google.com/drive/u/1/folders/1uttdZeYBu1Oeq0HrqZyqigFHpkXcLtaU",
+        "des_url": "",
         "impl_iframe": "../Admin/quanlibaidang.html"
     },
 
@@ -91,7 +91,7 @@ var data = [
         "id": "quanlynguoidung",
         "req_content": "<p>Trang quản lí người dùng</p>",
         "des_img": ["../Chucnang/images/quanlynguoidung.png"],
-        "des_url": "https://drive.google.com/drive/u/1/folders/1uttdZeYBu1Oeq0HrqZyqigFHpkXcLtaU",
+        "des_url": "",
         "impl_iframe": "../Admin/quanlinguoidung.html"
     }
 
