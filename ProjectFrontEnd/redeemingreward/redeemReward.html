@@ -24,12 +24,12 @@
 	<!-- end Header -->
 <div style="height: 16px;"></div>
 	<!--Start Main -->
-	<div class="main">
-		<div class="content">
-			<div class="row">
-				<div id="left-sidebar" class="col-md-2" style="background: #FDFDFD; height: 500px;">
-
-					<div class="info">
+<div class="container">
+        <div class="col-sm-12">
+            <div class="col-sm-3 left-sidebar" style="background: #FDFDFD; height: 500px;">
+               
+                
+                <div class="info" style="text-align: center;">
 
 						<div class="avt">
 							<a href="#">
@@ -63,13 +63,12 @@
 						</div>
 
 					</div>
-
-				</div> <!--end left-sidebar-->
-
-				<div id="right-sidebar" class="col-md-9 page-body" style="margin-left: 280px;" >
-					<div class="row">
-
-						<div class="col-md-12 page-body">
+                
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8 right-sidebar" style="background: #FDFDFD;">
+                <div class="col-sm-12 right-container">
+                    <div class="col-sm-12 page-body">
 							<div id="tab" class="btn-group">
 
 								
@@ -79,65 +78,51 @@
 						</div>
 						<div class="tab-content">
 							<div class="tab-pane active" id="deal">
-								<div class="col-md-12 col-xs-12 content-page">
-									<div class="post-title" style="text-align: center;">
-										<h4>Thông tin</h4>
+								<div class="col-sm-12 content-page">
+									<div class="post-title">
 									</div>
-									<div class="post-content">
-								<ul style="width: 100%;">
-									<li class="post-content-item"><p class="post-content-name">Phân loại:
-										</p>
-                                        <p class="post-content-value">
-											User.
-										</p>
-									</li>
-                                    <li class="post-content-item"><p class="post-content-name">Điểm giới hạn:
-										</p>
-                                        <p class="post-content-value">
-											50.000.
-										</p>
-									</li>
-                                    <li class="post-content-item"><p class="post-content-name">Số bài viết đã đăng:
-										</p>
-                                        <p class="post-content-value">
-											50.
-										</p>
-									</li>
-                                    <li class="post-content-item"><p class="post-content-name">Số bài viết được cộng điểm:
-										</p>
-                                        <p class="post-content-value">
-											30.
-										</p>
-									</li>
-                                    <li class="post-content-item"><p class="post-content-name">Số điểm đạt được:
-										</p>
-                                        <p class="post-content-value">
-											 20.000.
-										</p>
-									</li>
-                                    <li class="post-content-item"><p class="post-content-name">Số điểm đạt được từ bonus event:
-										</p>
-                                        <p class="post-content-value">
-											10.000.
-										</p>
-									</li>
-                                    <li class="post-content-item"><p class="post-content-name">Số điểm có hiện tại:
-										</p>
-                                        <p class="post-content-value">
-											30.000.
-										</p>
-									</li>
-									
-
-
-								</ul>
-									</div>
+                                    
+									<div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                Thông tin của bạn
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Họ tên </span>
+                                                <input id="msg" type="text" readonly class="form-control col-sm-9" name="mgs" value="Phạm Hoàng Sơn">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Địa chỉ </span>
+                                                <input id="msg" type="text" readonly class="form-control" name="mgs" value="KTX ĐHQG khu B, Đông Hòa , Dĩ An, Bình Dương.">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Điểm từ event </span>
+                                                <input id="msg" type="text" readonly class="form-control" name="mgs" value="10.000">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Điểm từ bài viết </span>
+                                                <input id="msg" type="text" readonly class="form-control" name="mgs" value="20.000">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Điểm hiện có    </span>
+                                                <input id="msg" type="text" readonly class="form-control" name="mgs" value="30.000">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Điểm giới hạn </span>
+                                                <input id="msg" type="text" readonly class="form-control" name="mgs" value="50.000">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
 								</div>
 
-								<div class="col-md-12 content-redeem">
+								<div class="col-sm-12 content-redeem">
 
 									<div class="title-redeem" style="text-align: center;">
-									<h4>Quà Tặng</h4>
+									<h1 style="color: red; font-weight: 700; font-size: 40px; padding-bottom: 30px;">Quà Tặng</h1>
 									</div>
 
 									<div class="post-redeem">
@@ -150,7 +135,7 @@
 										<div class="row">
 
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-1.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -158,14 +143,14 @@
 												</div>
 
 												<div class="info-redeem">
-													<p id="name-redeem">Tai nghe bluetooth không dây Samsung</p>
+													<p id="name-redeem">Tai nghe Samsung</p>
 													<p class="point-redeem" style="padding-bottom: 15px;">5000</p>
 													
 													<button class="btn btn-danger b1" type="button">Nhận</button>
 												</div>
 											</div>
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-2.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -173,14 +158,13 @@
 												</div>
 
 												<div class="info-redeem">
-													<p id="name-redeem">HeadPhone Bluetooth không dây Sony</p>
+													<p id="name-redeem">HeadPhone không dây     Sony</p>
 													<p class="point-redeem" style="padding-bottom: 15px;">10000</p>
 													
 													<button class="btn btn-danger b1" type="button">Nhận</button>
 												</div>
 											</div>
-
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-3.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -195,7 +179,7 @@
 												</div>
 											</div>
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-4.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -224,7 +208,7 @@
 										<div class="row">
 
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-5.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -239,7 +223,7 @@
 												</div>
 											</div>
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-6.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -254,7 +238,7 @@
 												</div>
 											</div>
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-7.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -262,14 +246,14 @@
 												</div>
 
 												<div class="info-redeem">
-													<p id="name-redeem">Chuyến du lịch 2 người 3 ngày ở Vịnh Hạ Long</p>
+													<p id="name-redeem">Chuyến du lịch Vịnh Hạ Long</p>
 													<p class="point-redeem" style="padding-bottom: 15px;">10000</p>
 													
 													<button class="btn btn-danger b1" type="button">Nhận</button>
 												</div>
 											</div>
 
-											<div class="col-md-3" style="text-align: center;">
+											<div class="col-sm-3" style="text-align: center;">
 												<div class="img-redeem">
 													<a href="#">
 														<img src="resources/images/qua-8.jpg" class="img-thumbnail avt" style="height: 140px; width: 140px;">
@@ -277,7 +261,7 @@
 												</div>
 
 												<div class="info-redeem">
-													<p id="name-redeem">Chuyến du lịch 2 người 7 ngày ở Singapore</p>
+													<p id="name-redeem">Chuyến du lịch Singapore</p>
 													<p class="point-redeem" style="padding-bottom: 15px;">50.000</p>
 													
 													<button class="btn btn-danger b2" type="button">Nhận</button>
@@ -295,12 +279,12 @@
 							<!--tab-2-->
 
 							<div class="tab-pane" id="deal-history">
-								<div class="col-md-12 content-page" style="border-bottom: none;" >
-									<div class="col-md-12 top-tab-2" >
+								<div class="col-sm-12 content-page" style="border-bottom: none;" >
+									<div class="col-sm-12 top-tab-2" >
 										<h4>Lịch sử giao dịch</h4>
 									</div>
 
-									<div class="col-md-12 mid-tab-2">
+									<div class="col-sm-12 mid-tab-2">
 										<table class="table table-striped">
 											<thead style="text-align: center; font-weight: 600;">
 												<tr style="background-color: #333; color: #ffffff;">
@@ -452,15 +436,16 @@
 							</div>
 
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</div><!--end main-->	
+            </div>
+        </div>  
+        </div>  
+</div>
+    
+    <!--end main-->	
 	
 	<!--Start footer-->
 	
-		<div class="col-md-16 main-footer footer">
+<div class="col-sm-16 main-footer footer">
 			<footer>
 				<div>
 					<p>@Copyright</p>
