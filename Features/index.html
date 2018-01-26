@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto Slab", san-serif;
+        line-height: 150%;
+    }
+
+    h4 {
+        font-size: 115%;
+    }
+
+    h1 {
+        font-size: 150%;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 20px
+    }
+
+    .feature-detail {
+        display: none;
+        margin-top: 8px;
+    }
+
+    .feature-detail img {
+        border: 0;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .w3-modal .content {
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+    .w3-modal {
+        padding-top: 16px;
+    }
+
+    .w3-quarter {
+        margin-top: 16px;
+    }
+
+    .w3-main {
+        margin-left: 300px;
+    }
+
+</style>
+
+<body>
+
+    <nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Đóng</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>Nhóm<br>02</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#frontend-feature" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Frontend</a>
+            <a href="#backend-feature" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Backend</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+        <span>Nhóm 02</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px; margin-top: 32px;">
+
+        <!-- First Photo Grid-->
+        <div id="frontend-feature" class="w3-row-padding w3-padding-16 w3-center">
+            <h2>Frontend</h2><br>
+            <div class="w3-quarter">
+                <img src="img/dk.jpg" alt="Đăng nhập, đăng kí" style="width:100%">
+                <h4>Đăng nhập, đăng kí</h4>
+                <button class="w3-button w3-teal" onclick="show('dangnhap')">Chi tiết</button>
+                <br>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/posting.jpg" alt="Đăng bài" style="width:100%">
+                <h4>Đăng bài</h4>
+                <button class="w3-button w3-teal" onclick="show('dangbai')">Chi tiết</button>
+                <br>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/newfeed.jpg" alt="Newfeed" style="width:100%">
+                <h4>Newfeed</h4>
+                <button class="w3-button w3-teal" onclick="show('newfeed')">Chi tiết</button>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/trangcanhan.jpg" alt="Trang cá nhân" style="width:100%">
+                <h4>Trang cá nhân</h4>
+                <button class="w3-button w3-teal" onclick="show('trangcanhan')">Chi tiết</button>
+                <br>
+            </div>
+        </div>
+
+
+        <!--second grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="img/gift.jpg" alt="Đổi thưởng" style="width:100%">
+                <h4>Đổi thưởng</h4>
+                <button class="w3-button w3-teal" onclick="show('doithuong')">Chi tiết</button>
+
+            </div>
+        </div>
+
+
+        <!-- modal -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-white w3-xlarge w3-display-topright">&times;</span>
+                </header>
+
+                <div class="w3-bar w3-border-bottom">
+                    <button id="req_btn" class="tablink w3-bar-item w3-button" onclick="showReq();">Requirement</button>
+
+                    <button id="frontend-posting-btn" class="tablink w3-bar-item w3-button" onclick="showDes();">Design</button>
+                    <button id="newfeed_btn" class="tablink w3-bar-item w3-button" onclick="showImpl();">Implement</button>
+
+                </div>
+                <div class="content">
+
+                    <div id="req_content" class="w3-container feature-detail">
+
+                    </div>
+
+                    <div id="des_content" class="w3-container feature-detail">
+                        <img id="des_img" style="width: 100%; height: auto;">
+                        <br>
+                        <p style="text-align: center;"><a id="des_url" href="#" target="_blank" class="w3-button w3-teal"><i class="fas fa-external-link-alt"></i>&nbsp;Tải về</a></p>
+                    </div>
+
+                    <div id="impl_content" class="w3-container feature-detail">
+                        <iframe style="width: 100%; height: 410px;" id="impl_iframe"></iframe>
+                        <p style="text-align: center;"><a id="impl_url" href="#" target="_blank" class="w3-button w3-teal"><i class="fas fa-external-link-alt"></i>&nbsp;Đi tới</a></p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+        <!--end modal-->
+
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+    </script>
+
+    <script src="data.js"></script>
+
+    <script>
+        function show(id) {
+            document.getElementById('id01').style.display = 'block';
+            for (var i = 0; i < data.length; i++) {
+                var d = data[i];
+                if (d.id === id) {
+                    document.getElementById("req_content").innerHTML = d.req_content;
+                    document.getElementById("des_img").setAttribute("src", d.des_img);
+                    document.getElementById("des_url").setAttribute("href", d.des_url);
+                    document.getElementById("impl_iframe").setAttribute("src", d.impl_iframe);
+                    document.getElementById("impl_url").setAttribute("href", d.impl_iframe);
+                    showReq();
+                    break;
+                }
+            }
+        }
+
+        function hideAll() {
+            var featureDetail = document.getElementsByClassName('feature-detail');
+            for (var i = 0; i < featureDetail.length; i++) {
+                featureDetail[i].style.display = 'none';
+            }
+        }
+
+        function showReq() {
+            hideAll();
+            document.getElementById("req_content").style.display = 'block';
+        }
+
+        function showDes() {
+            hideAll();
+            document.getElementById("des_content").style.display = 'block';
+        }
+
+        function showImpl() {
+            hideAll();
+            document.getElementById("impl_content").style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>
