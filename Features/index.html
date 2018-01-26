@@ -34,13 +34,11 @@
 
     .feature-detail {
         display: none;
-        margin-top: 8px;
     }
 
     .feature-detail img {
         border: 0;
         width: 100%;
-        margin-top: 8px;
         margin-bottom: 8px;
     }
 
@@ -144,18 +142,19 @@
                 <div class="w3-bar w3-border-bottom">
                     <button id="req_btn" class="tablink w3-bar-item w3-button" onclick="showReq();">Requirement</button>
 
-                    <button id="frontend-posting-btn" class="tablink w3-bar-item w3-button" onclick="showDes();">Design</button>
-                    <button id="newfeed_btn" class="tablink w3-bar-item w3-button" onclick="showImpl();">Implement</button>
+                    <button id="des_btn" class="tablink w3-bar-item w3-button" onclick="showDes();">Design</button>
+                    <button id="impl_btn" class="tablink w3-bar-item w3-button" onclick="showImpl();">Implement</button>
 
                 </div>
                 <div class="content">
-
                     <div id="req_content" class="w3-container feature-detail">
 
                     </div>
 
                     <div id="des_content" class="w3-container feature-detail">
-                        <img id="des_img" style="width: 100%; height: auto;">
+                        <div id="des_img">
+                            <img style="width: 100%; height: auto;">
+                        </div>
                         <br>
                         <p style="text-align: center;"><a id="des_url" href="#" target="_blank" class="w3-button w3-teal"><i class="fas fa-external-link-alt"></i>&nbsp;Tải về</a></p>
                     </div>
@@ -198,11 +197,19 @@
                 var d = data[i];
                 if (d.id === id) {
                     document.getElementById("req_content").innerHTML = d.req_content;
-                    document.getElementById("des_img").setAttribute("src", d.des_img);
+                    var desImg = document.getElementById("des_img");
+                    desImg.innerHTML = '';
+                    var imgs = d.des_img;
+                    for (var i = 0; i < imgs.length; i++) {
+                        var img = document.createElement('img');
+                        img.setAttribute("src", imgs[i]);
+                        desImg.appendChild(img);
+                    }
                     document.getElementById("des_url").setAttribute("href", d.des_url);
                     document.getElementById("impl_iframe").setAttribute("src", d.impl_iframe);
                     document.getElementById("impl_url").setAttribute("href", d.impl_iframe);
                     showReq();
+                    showTablink('req_btn');
                     break;
                 }
             }
@@ -212,22 +219,37 @@
             var featureDetail = document.getElementsByClassName('feature-detail');
             for (var i = 0; i < featureDetail.length; i++) {
                 featureDetail[i].style.display = 'none';
+                featureDetail[i].classList.remove("w3-light-grey");
             }
         }
 
-        function showReq() {
+        function showTablink(id) {
+            var tablinks = document.getElementsByClassName("tablink");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("w3-light-grey");
+            }
+            document.getElementById(id).classList.add("w3-light-grey");
+        }
+
+        function showTab(id) {
             hideAll();
-            document.getElementById("req_content").style.display = 'block';
+            var tab = document.getElementById(id);
+            tab.style.display = 'block';
+        }
+
+        function showReq() {
+            showTab('req_content');
+            showTablink('req_btn');
         }
 
         function showDes() {
-            hideAll();
-            document.getElementById("des_content").style.display = 'block';
+            showTab("des_content");
+            showTablink('des_btn');
         }
 
         function showImpl() {
-            hideAll();
-            document.getElementById("impl_content").style.display = 'block';
+            showTab("impl_content");
+            showTablink('impl_btn');
         }
 
     </script>
