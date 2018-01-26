@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Trang chức năng</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -70,6 +70,7 @@
         </div>
         <div class="w3-bar-block">
             <a href="#frontend-feature" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Frontend</a>
+            <a href="#diary" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Phân công</a>
             <a href="#backend-feature" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Backend</a>
         </div>
     </nav>
@@ -129,7 +130,69 @@
                 <button class="w3-button w3-teal" onclick="show('doithuong')">Chi tiết</button>
 
             </div>
+
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/tintuc1.png" alt="Tin tức 1" style="width:100%">
+                <h4>Tin tức 1</h4>
+                <button class="w3-button w3-teal" onclick="show('tintuc1')">Chi tiết</button>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/tintuc2.png" alt="Tin tức 2" style="width:100%">
+                <h4>Tin tức 2</h4>
+                <button class="w3-button w3-teal" onclick="show('tintuc2')">Chi tiết</button>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/index.png" alt="Trang chủ" style="width:100%">
+                <h4>Trang chủ</h4>
+                <button class="w3-button w3-teal" onclick="show('trangchu')">Chi tiết</button>
+            </div>
+
         </div>
+
+
+
+
+        <div id="diary" class="w3-row-padding w3-padding-16 w3-center">
+            <h2>Phân công</h2><br>
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/phancong.png" alt="Đăng nhập, đăng kí" style="width:100%">
+                <p></p>
+                <button class="w3-button w3-teal" onclick="show('phancong')">Chi tiết</button>
+                <br>
+            </div>
+
+        </div>
+
+
+        <!-- First Photo Grid-->
+        <div id="backend-feature" class="w3-row-padding w3-padding-16 w3-center">
+            <h2>Backend</h2><br>
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/trangadmin.png" alt="Trang Admin" style="width:100%">
+                <h4>Trang Admin</h4>
+                <button class="w3-button w3-teal" onclick="show('admin')">Chi tiết</button>
+                <br>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/quanlybaidang.png" alt="Quản lý bài đăng" style="width:100%">
+                <h4>Đăng bài</h4>
+                <button class="w3-button w3-teal" onclick="show('quanlybaidang')">Chi tiết</button>
+                <br>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="../Chucnang/images/quanlynguoidung.png" alt="Quản lý người dùng" style="width:100%">
+                <h4>Quản lý người dùng</h4>
+                <button class="w3-button w3-teal" onclick="show('quanlynguoidung')">Chi tiết</button>
+            </div>
+
+        </div>
+
+
+
 
 
         <!-- modal -->
@@ -203,6 +266,7 @@
                     for (var i = 0; i < imgs.length; i++) {
                         var img = document.createElement('img');
                         img.setAttribute("src", imgs[i]);
+                        desImg.appendChild(document.createElement('p'));
                         desImg.appendChild(img);
                     }
                     document.getElementById("des_url").setAttribute("href", d.des_url);
