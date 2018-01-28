@@ -2,7 +2,7 @@ var data = [
     {
         "id": "dangnhap",
         "req_content": "<p>Trang đăng nhập</p>",
-        "des_img": [],
+        "des_img": ["img/dk.jpg"],
         "des_url": "",
         "impl_iframe": ""
     },
@@ -18,15 +18,15 @@ var data = [
     {
         "id": "newfeed",
         "req_content": "<p>Trang Newfeed</p>",
-        "des_img": [],
+        "des_img": ["img/indexpts.png"],
         "des_url": "",
-        "impl_iframe": "4"
+        "impl_iframe": "../ProjectFrontEnd/index.html"
     },
 
     {
         "id": "trangcanhan",
         "req_content": "<p>Trang cá nhân</p>",
-        "des_img": [],
+        "des_img": ["img/trangcanhanpts1.png"],
         "des_url": "",
         "impl_iframe": ""
     },
