@@ -5,74 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    
+    	<script src="shared_vendors/js/jquery.min.js"></script>
+  <script src="shared_vendors/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="shared_vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/trangcanhan.css">
-    <link rel="stylesheet" href="assets/css/trangcanhan.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/menu.css">
-
+    <link rel="stylesheet" href="resources/css/button.css">
+<link rel="import" href="shared_header/header.html" for="main-header">
 </head>
 
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-1" style="margin-left: 50px; margin-right: 50px;">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        
-        </button>
-                <a class="navbar-brand" style="color: #ECEFF6" href="#">Trang Chủ</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search" style="width: 400px">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-
-                        <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
-                        <li class="divider"></li>
-                        <li><a href="index.html">Công Nghệ</span></a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Lập Trình</span></a></li>
-
-
-
-                    </li>
-                </ul>
-
-
-
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Nhật ký hoạt động</a></li>
-                        <li><a href="#">Tùy chọn bảng tin</a></li>
-                        <li><a href="#">Cài đặt</a></li>
-                        <li><a href="#">Đăng xuất</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-        </div>
-    </nav>
     <div class="container">
+        <header id="main-header" src="header.html">
+            </header>
         <div class="row">
             <div class="profile">
 
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
                 <div class="container">
                     <div class="fb-profile">
-                        <img align="left" class="fb-image-lg" src="assets/img/doan.jpg" alt="Profile image example" />
-                        <img align="left" class="fb-image-profile thumbnail" src="assets/img/khoa.jpg" alt="Profile image example" />
+                        <img align="left" class="fb-image-lg" src="resources/img/doan.jpg" alt="Profile image example" />
+                        <img align="left" class="fb-image-profile thumbnail" src="resources/img/khoa.jpg" alt="Profile image example" />
                         <div class="fb-profile-text">
                             <h3>Đàm Quang Khoa</h3>
                             <p>Hopeful</p>
@@ -94,7 +48,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row">
-                                <div class="col-md-4"><img src="assets/img/global.png" width="36" height="36">
+                                <div class="col-md-4"><img src="resources/img/global.png" width="36" height="36">
                                 </div>
                                 <div class="col-md-8">
                                     <h4>Giới thiệu</h4>
@@ -108,35 +62,35 @@
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-0"><img src="assets/img/ic_work.png" width="50" height="50">
+                                <div class="col-md-2 col-md-offset-0"><img src="resources/img/ic_work.png" width="50" height="50">
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="text-primary">Phó Bí Thư Đoàn Khoa</h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-0"><img src="assets/img/ic_learn.png" width="50" height="50">
+                                <div class="col-md-2 col-md-offset-0"><img src="resources/img/ic_learn.png" width="50" height="50">
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="text-primary">Đã học tại Trường ĐH Nông Lâm</h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-0"><img src="assets/img/ic_live.png" width="50" height="50">
+                                <div class="col-md-2 col-md-offset-0"><img src="resources/img/ic_live.png" width="50" height="50">
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="text-primary">Sống tại Thành Phố Hồ Chí Minh</h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-0"><img src="assets/img/ic_follow.png" width="50" height="50">
+                                <div class="col-md-2 col-md-offset-0"><img src="resources/img/ic_follow.png" width="50" height="50">
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="text-left text-primary">Có 500 người theo dõi</h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-0"><img src="assets/img/ic_ql.png" width="50" height="50">
+                                <div class="col-md-2 col-md-offset-0"><img src="resources/img/ic_ql.png" width="50" height="50">
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="text-primary">Quản lí toidicodedao.com</h5>
@@ -146,17 +100,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6"><img src="assets/img/avatar.png" width="150" height="100">
+                        <div class="col-md-6"><img src="resources/img/avatar.png" width="150" height="100">
                         </div>
-                        <div class="col-md-6"><img src="assets/img/avatar.png" width="140" height="100">
+                        <div class="col-md-6"><img src="resources/img/avatar.png" width="140" height="100">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4"><img src="assets/img/avatar.png" width="90" height="100">
+                        <div class="col-md-4"><img src="resources/img/avatar.png" width="90" height="100">
                         </div>
-                        <div class="col-md-4"><img src="assets/img/avatar.png" width="90" height="100">
+                        <div class="col-md-4"><img src="resources/img/avatar.png" width="90" height="100">
                         </div>
-                        <div class="col-md-4"><img src="assets/img/avatar.png" width="90" height="100">
+                        <div class="col-md-4"><img src="resources/img/avatar.png" width="90" height="100">
                         </div>
                     </div>
                 </div>
@@ -164,7 +118,7 @@
                 <div class="section-content">
                     <div class="baidang">
                         <div class="row">
-                            <div class="col-md-2"><img src="assets/img/ic_pic.png" width="36" height="36">
+                            <div class="col-md-2"><img src="resources/img/ic_pic.png" width="36" height="36">
                             </div>
                             <div class="col-md-10">
                                 <h4>Bài đăng</h4>
@@ -172,38 +126,38 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/avatar.png" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/avatar.png" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/10418968_359116804294171_4269425157258141791_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/10418968_359116804294171_4269425157258141791_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/10422281_1646548942253863_1111609251164853994_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/10422281_1646548942253863_1111609251164853994_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/1458499_898592803484751_1908018953882014915_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/1458499_898592803484751_1908018953882014915_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/1911642_861726243838074_7635922201705667515_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/1911642_861726243838074_7635922201705667515_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/10996626_1584728901769201_4564823188667594566_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/10996626_1584728901769201_4564823188667594566_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4"><img src="assets/img/10422281_1646548942253863_1111609251164853994_n.jpg" width="90" height="100">
+                            <div class="col-md-4"><img src="resources/img/10422281_1646548942253863_1111609251164853994_n.jpg" width="90" height="100">
                             </div>
-                            <div class="col-md-4"><img src="assets/img/frapho.com (2).png" width="90" height="100">
+                            <div class="col-md-4"><img src="resources/img/frapho.com (2).png" width="90" height="100">
                             </div>
-                            <div class="col-md-4"><img src="assets/img/doan.jpg" width="90" height="100">
+                            <div class="col-md-4"><img src="resources/img/doan.jpg" width="90" height="100">
                             </div>
                         </div>
                     </div>
@@ -211,7 +165,7 @@
                 <div class="section-content">
                     <div class="banbe">
                         <div class="row">
-                            <div class="col-md-2"><img src="assets/img/ic_friend.png" width="36" height="36">
+                            <div class="col-md-2"><img src="resources/img/ic_friend.png" width="36" height="36">
                             </div>
                             <div class="col-md-8">
                                 <h4>Bạn bè</h4>
@@ -219,43 +173,43 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/avatar.png" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/avatar.png" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/logo.png" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/logo.png" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/11042973_1571394219769336_3317560738334599091_n.jpg" width="90" height="100">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/frapho.com.png" width="90" height="100">
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/frapho.com (2).png" width="90" height="100">
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/frapho.com (1).png" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/11042973_1571394219769336_3317560738334599091_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/11042973_1571394219769336_3317560738334599091_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/frapho.com.png" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/1458499_898592803484751_1908018953882014915_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/frapho.com (2).png" width="90" height="100">
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a class="text-lowercase" href="#"><img src="assets/img/1911642_861726243838074_7635922201705667515_n.jpg" width="90" height="100">
+                                <a class="text-lowercase" href="#"><img src="resources/img/frapho.com (1).png" width="90" height="100">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="text-lowercase" href="#"><img src="resources/img/11042973_1571394219769336_3317560738334599091_n.jpg" width="90" height="100">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="text-lowercase" href="#"><img src="resources/img/1458499_898592803484751_1908018953882014915_n.jpg" width="90" height="100">
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="text-lowercase" href="#"><img src="resources/img/1911642_861726243838074_7635922201705667515_n.jpg" width="90" height="100">
                                 </a>
                             </div>
                         </div>
@@ -269,7 +223,7 @@
                         <div class="header">
                             <div class="row">
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <h4><img src="images/BaiDang_03.png" class="img-circle" style="width: 40px;height: 50px"> Đàm Quang Khoa </h4>
+                                    <h4><img src="resources/img/khoa.jpg" class="img-circle" style="width: 40px;height: 50px"> Đàm Quang Khoa </h4>
                                 </div>
                                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                     <p> đã thêm một ảnh đại diện tạm thời</p>
@@ -277,7 +231,7 @@
                             </div>
 
 
-                            Hôm qua lúc 19:30 <img alt="" src="images/BaiDang_07.png">
+                            Hôm qua lúc 19:30 <img alt="" src="resources/img/BaiDang_07.png">
                             <select>
                                 <option> </option>
                                 <option> </option>
@@ -290,7 +244,7 @@
                         <div class="hinhanh">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="assets/img/avatar.png" class="img-responsive" alt="Image">
+                                    <img src="resources/img/avatar.png" class="img-responsive" alt="Image">
                                     <div class="noidungbaidang">
                                         <h4> Đoàn khoa CNTT Trường ĐH Nông Lâm TP.Hồ Chí Minh <img alt="" src="images/iconmore.png"></h4>
                                         <p> Ngôn ngữ Java là mối quan tâm hàng đầu của các công ty hiện nay
@@ -301,7 +255,7 @@
                                     <!-- end noi dung -->
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                            <img src="images/like.png" class="img-responsive" alt="Image">
+                                            <img src="resources/img/like.png" class="img-responsive" alt="Image">
                                         </div>
                                     </div>
                                     <div class="action">
@@ -332,7 +286,7 @@
                         <div class="header">
                             <div class="row">
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <h4><img src="images/BaiDang_03.png" class="img-circle" style="width: 40px;height: 50px"> Đàm Quang Khoa </h4>
+                                    <h4><img src="resources/img/khoa.jpg" class="img-circle" style="width: 40px;height: 50px"> Đàm Quang Khoa </h4>
                                 </div>
                                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                     <p> đã thêm một ảnh đại diện tạm thời</p>
@@ -340,7 +294,7 @@
                             </div>
 
 
-                            Hôm qua lúc 19:30 <img alt="" src="images/BaiDang_07.png">
+                            Hôm qua lúc 19:30 <img alt="" src="resources/img/BaiDang_07.png">
                             <select>
                                 <option> </option>
                                 <option> </option>
@@ -353,7 +307,7 @@
                         <div class="hinhanh">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="assets/img/avatar.png" class="img-responsive" alt="Image">
+                                    <img src="resources/img/avatar.png" class="img-responsive" alt="Image">
                                     <div class="noidungbaidang">
                                         <h4> Đoàn khoa CNTT Trường ĐH Nông Lâm TP.Hồ Chí Minh <img alt="" src="images/iconmore.png"></h4>
                                         <p> Ngôn ngữ Java là mối quan tâm hàng đầu của các công ty hiện nay
@@ -364,7 +318,7 @@
                                     <!-- end noi dung -->
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                            <img src="images/like.png" class="img-responsive" alt="Image">
+                                            <img src="resources/img/like.png" class="img-responsive" alt="Image">
                                         </div>
                                     </div>
                                     <div class="action">
@@ -398,8 +352,8 @@
     <footer>
         <h5> </h5>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
